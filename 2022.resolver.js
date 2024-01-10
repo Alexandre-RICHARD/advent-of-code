@@ -33,31 +33,31 @@ const day2 = (input) => {
 
   split.forEach((element) => {
     switch (element) {
-      case "A X":     // Pierre - Pierre = égalité => 1 points pierre + 3 points égalité
+      case "A X": // Pierre - Pierre = égalité => 1 points pierre + 3 points égalité
         pointPrimary += 4;
         break;
-      case "A Y":     // Pierre - Feuille = victoire => 2 points feuille + 6 points victoire
+      case "A Y": // Pierre - Feuille = victoire => 2 points feuille + 6 points victoire
         pointPrimary += 8;
         break;
-      case "A Z":     // Pierre - Ciseau = défaite => 3 points ciseau + 0 point de défaite
+      case "A Z": // Pierre - Ciseau = défaite => 3 points ciseau + 0 point de défaite
         pointPrimary += 3;
         break;
-      case "B X":     // Feuille - Pierre = défaite => 1 points pierre + 0 points défaite
+      case "B X": // Feuille - Pierre = défaite => 1 points pierre + 0 points défaite
         pointPrimary += 1;
         break;
-      case "B Y":     // Feuille - Feuille = égalité => 2 points feuille + 3 points égalité
+      case "B Y": // Feuille - Feuille = égalité => 2 points feuille + 3 points égalité
         pointPrimary += 5;
         break;
-      case "B Z":     // Feuille - ciseau = victoire => 3 point ciseau + 6 point victoire
+      case "B Z": // Feuille - ciseau = victoire => 3 point ciseau + 6 point victoire
         pointPrimary += 9;
         break;
-      case "C X":     // Ciseau - Pierre = victoire => 1 point Pierre + 6 point victoire
+      case "C X": // Ciseau - Pierre = victoire => 1 point Pierre + 6 point victoire
         pointPrimary += 7;
         break;
-      case "C Y":     // Ciseau - Feuile = défaite => 2 point Feuile + 0 point défaite
+      case "C Y": // Ciseau - Feuile = défaite => 2 point Feuile + 0 point défaite
         pointPrimary += 2;
         break;
-      case "C Z":     // Ciseau - Ciseau = égalité => 3 point Ciseau + 3 point égalité
+      case "C Z": // Ciseau - Ciseau = égalité => 3 point Ciseau + 3 point égalité
         pointPrimary += 6;
         break;
     }
@@ -77,31 +77,31 @@ const day2 = (input) => {
 
   split.forEach((element) => {
     switch (element) {
-      case "A X":       // Défaite face à pierre donc ciseau => 0 + 3
+      case "A X": // Défaite face à pierre donc ciseau => 0 + 3
         pointSecondary += 3;
         break;
-      case "A Y":       // Égalité face à pierre donc pierre => 3 + 1
+      case "A Y": // Égalité face à pierre donc pierre => 3 + 1
         pointSecondary += 4;
         break;
-      case "A Z":       // Victoire face à pierre donc feuille => 6 + 2
+      case "A Z": // Victoire face à pierre donc feuille => 6 + 2
         pointSecondary += 8;
         break;
-      case "B X":       // Défaite face à feuille donc pierre => 0 + 1
+      case "B X": // Défaite face à feuille donc pierre => 0 + 1
         pointSecondary += 1;
         break;
-      case "B Y":       // Égalité face à feuille donc feuille => 3 + 2
+      case "B Y": // Égalité face à feuille donc feuille => 3 + 2
         pointSecondary += 5;
         break;
-      case "B Z":       // Victoire face à feuille donc ciseau => 6 + 3
+      case "B Z": // Victoire face à feuille donc ciseau => 6 + 3
         pointSecondary += 9;
         break;
-      case "C X":       // Défaite face à ciseau donc feuille => 0 + 2
+      case "C X": // Défaite face à ciseau donc feuille => 0 + 2
         pointSecondary += 2;
         break;
-      case "C Y":       // Égalité face à ciseau donc ciseau => 3 + 3
+      case "C Y": // Égalité face à ciseau donc ciseau => 3 + 3
         pointSecondary += 6;
         break;
-      case "C Z":       // Victoire face à ciseau donc pierre => 6 + 1
+      case "C Z": // Victoire face à ciseau donc pierre => 6 + 1
         pointSecondary += 7;
         break;
     }
